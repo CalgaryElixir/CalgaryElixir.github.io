@@ -9,7 +9,6 @@ owner:
   name: Calgary Elixir Wiki
   avatar: calgary_elixir_logo.png
   bio: "Everything there is to know about Elixir in Calgary"
-  meetup: elixir-calgary
 
 # The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
 # you may do so in _sass/variables.scss
