@@ -6,14 +6,14 @@ permalink: /helpful_resources/
 ---
 
 
-## Global Resources:
+## Global Resources
 - [Elixir Documentation](https://elixir-lang.org/)
 - [Elixir School](https://elixirschool.com/en/lessons/basics/basics) - Step by step guide to getting started with Elixir.
 - [Elixir Slack](https://elixir-slack.community/) - Many of our local members are active in the `#calgary` channel.
 - [Elixir Forum](https://elixirforum.com/) - Great forum for help with Elixir. In many cases, core members of the Elixir team will be contributing to discussions!
 - [Elixir Jobs](https://elixirjobs.net/) - Global Elixir job board.
 
-## Local resources
+## Local Resources
 - [Calgary Elixir Meetup](https://www.meetup.com/elixir-calgary/) - A bi-monthly event hosted by Elixir developers.
 - Calgary companies using Elixir - Coming soon!
 
