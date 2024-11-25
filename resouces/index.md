@@ -14,7 +14,7 @@ permalink: /helpful_resources/
 
 ## Local resources
 - [Calgary Elixir Meetup](https://www.meetup.com/elixir-calgary/) - A bi-monthly event hosted by Elixir developers.
-- [Calgary companies using Elixir] - Coming soon!
+- Calgary companies using Elixir - Coming soon!
 
 ## Recommended Reading
 - [Elixir in Action](https://www.manning.com/books/elixir-in-action-third-edition)
