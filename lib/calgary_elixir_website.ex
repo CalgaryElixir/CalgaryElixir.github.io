@@ -18,7 +18,9 @@ defmodule CalgaryElixirWebsite do
     generate_page("blog/index.html", &CalgaryElixirWebsite.Pages.Blog.index/1, %{posts: posts})
 
     for post <- posts do
-      generate_page("blog/#{post.id}/index.html", &CalgaryElixirWebsite.Pages.Blog.show/1, %{post: post})
+      generate_page("blog/#{post.id}/index.html", &CalgaryElixirWebsite.Pages.Blog.show/1, %{
+        post: post
+      })
     end
 
     copy_static_assets()
@@ -41,5 +43,6 @@ defmodule CalgaryElixirWebsite do
 
   defp copy_static_assets do
     File.cp_r!("priv/static/assets", Path.join(@output_dir, "assets"))
+    File.cp_r!("assets/images", Path.join(@output_dir, "assets/images"))
   end
 end
