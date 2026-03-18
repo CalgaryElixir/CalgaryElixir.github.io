@@ -11,16 +11,24 @@ defmodule CalgaryElixirWebsite.Components.Layouts do
         <title><%= @page_title %></title>
         <link rel="stylesheet" href="/assets/css/app.css" />
       </head>
-      <body>
-        <nav>
-          <a href="/">Home</a> |
-          <a href="/meetup/">Meetup</a> |
-          <a href="/resources/">Resources</a> |
-          <a href="/blog/">Blog</a>
+      <body class="min-h-screen bg-white text-gray-900 flex flex-col">
+        <nav class="bg-purple-800 text-white px-4 py-3">
+          <div class="max-w-3xl mx-auto flex items-center justify-between">
+            <a href="/" class="font-bold text-lg tracking-wide">Calgary Elixir</a>
+            <div class="flex gap-6 text-sm font-medium">
+              <a href="/meetup/" class="hover:text-purple-400">Meetup</a>
+              <a href="/resources/" class="hover:text-purple-400">Resources</a>
+              <a href="/blog/" class="hover:text-purple-400">Blog</a>
+            </div>
+          </div>
         </nav>
-        <main>
+        <main class="max-w-3xl mx-auto w-full px-4 py-8 flex-1">
           <%= render_slot(@inner_block) %>
         </main>
+        <footer class="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
+          CC BY-NC 4.0 &mdash; Calgary Elixir. Built with
+          <a href="https://elixir-lang.org" class="underline hover:text-purple-800">Elixir</a>.
+        </footer>
       </body>
     </html>
     """

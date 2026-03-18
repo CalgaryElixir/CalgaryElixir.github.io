@@ -6,9 +6,11 @@ defmodule CalgaryElixirWebsite.Pages.NotFound do
   def render(assigns) do
     ~H"""
     <.root page_title="Page Not Found - Calgary Elixir">
-      <h1>404 - Page Not Found</h1>
-      <p>Sorry, the page you're looking for doesn't exist.</p>
-      <p><a href="/">Go back home</a></p>
+      <div class="text-center py-16">
+        <h1 class="text-5xl font-bold text-purple-800 mb-4">404</h1>
+        <p class="text-xl text-gray-600 mb-6">Page not found</p>
+        <a href="/" class="text-purple-800 underline hover:text-purple-400">Go back home</a>
+      </div>
     </.root>
     """
   end
