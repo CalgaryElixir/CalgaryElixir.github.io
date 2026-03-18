@@ -1,18 +1,30 @@
 defmodule CalgaryElixirWebsite do
   @moduledoc """
-  Documentation for `CalgaryElixirWebsite`.
+  Static site generator for the Calgary Elixir website.
   """
 
-  @doc """
-  Hello world.
+  @output_dir "output"
 
-  ## Examples
+  def generate do
+    File.rm_rf!(@output_dir)
+    File.mkdir_p!(@output_dir)
 
-      iex> CalgaryElixirWebsite.hello()
-      :world
+    generate_page("index.html", &CalgaryElixirWebsite.Pages.Home.render/1, %{})
 
-  """
-  def hello do
-    :world
+    File.write!(Path.join(@output_dir, ".nojekyll"), "")
+
+    IO.puts("Site generated in #{@output_dir}/")
+  end
+
+  defp generate_page(path, render_fn, assigns) do
+    html =
+      assigns
+      |> render_fn.()
+      |> Phoenix.HTML.Safe.to_iodata()
+      |> IO.iodata_to_binary()
+
+    full_path = Path.join(@output_dir, path)
+    full_path |> Path.dirname() |> File.mkdir_p!()
+    File.write!(full_path, html)
   end
 end
