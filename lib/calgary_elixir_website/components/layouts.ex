@@ -12,16 +12,16 @@ defmodule CalgaryElixirWebsite.Components.Layouts do
         <link rel="stylesheet" href="/assets/css/app.css" />
       </head>
       <body class="min-h-screen bg-white text-gray-900 flex flex-col">
-        <nav class="bg-purple-800 text-white px-4 py-3">
+        <nav class="bg-gray-100 border-b-4 border-purple-800 px-4 py-3">
           <div class="max-w-3xl mx-auto flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-wide">
-              <img src="/assets/images/calgary_elixir_logo.png" alt="" class="h-8 w-8 rounded-full" />
+            <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-wide text-purple-800">
+              <img src="/assets/images/calgary_elixir_logo.png" alt="" class="h-12 w-12" />
               Calgary Elixir
             </a>
             <div class="flex gap-6 text-sm font-medium">
-              <a href="/meetup/" class="hover:text-purple-400">Meetup</a>
-              <a href="/resources/" class="hover:text-purple-400">Resources</a>
-              <a href="/blog/" class="hover:text-purple-400">Blog</a>
+              <a href="/meetup/" class="text-gray-700 hover:text-purple-800">Meetup</a>
+              <a href="/resources/" class="text-gray-700 hover:text-purple-800">Resources</a>
+              <a href="/blog/" class="text-gray-700 hover:text-purple-800">Blog</a>
             </div>
           </div>
         </nav>
