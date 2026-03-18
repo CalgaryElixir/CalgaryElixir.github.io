@@ -1,9 +1,21 @@
-# To Do:
-- Calgary companies using Elixir
-    - Start a new page, add companies
-    - Add link to the `Helpful Resources` bullet
-- Meetup
-    - Link to the Meetup youtube channel
-    - Add some info about the venue
-    - Add blurbs about the presenters
-    - Start a blog-style list of past presentations
+# Calgary Elixir Website
+
+The website for the Calgary Elixir community, built with Elixir and [NimblePublisher](https://github.com/dashbitco/nimble_publisher).
+
+## Setup
+
+```sh
+mix deps.get
+```
+
+## Generate the site
+
+```sh
+mix site.gen
+```
+
+Static HTML is written to `output/`. Open `output/index.html` in a browser to preview.
+
+## Deployment
+
+The site is deployed to GitHub Pages via GitHub Actions on push to `main`.
