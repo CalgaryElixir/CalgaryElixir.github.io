@@ -41,5 +41,6 @@ defmodule CalgaryElixirWebsite do
 
   defp copy_static_assets do
     File.cp_r!("priv/static/assets", Path.join(@output_dir, "assets"))
+    File.cp_r!("assets/images", Path.join(@output_dir, "assets/images"))
   end
 end

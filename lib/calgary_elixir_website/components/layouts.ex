@@ -14,7 +14,10 @@ defmodule CalgaryElixirWebsite.Components.Layouts do
       <body class="min-h-screen bg-white text-gray-900 flex flex-col">
         <nav class="bg-purple-800 text-white px-4 py-3">
           <div class="max-w-3xl mx-auto flex items-center justify-between">
-            <a href="/" class="font-bold text-lg tracking-wide">Calgary Elixir</a>
+            <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-wide">
+              <img src="/assets/images/calgary_elixir_logo.png" alt="" class="h-8 w-8 rounded-full" />
+              Calgary Elixir
+            </a>
             <div class="flex gap-6 text-sm font-medium">
               <a href="/meetup/" class="hover:text-purple-400">Meetup</a>
               <a href="/resources/" class="hover:text-purple-400">Resources</a>
