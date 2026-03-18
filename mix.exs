@@ -24,7 +24,8 @@ defmodule CalgaryElixirWebsite.MixProject do
       {:phoenix_live_view, "~> 1.0"},
       {:nimble_publisher, "~> 1.1"},
       {:makeup_elixir, "~> 1.0"},
-      {:makeup_erlang, "~> 1.0"}
+      {:makeup_erlang, "~> 1.0"},
+      {:tailwind, "~> 0.2", runtime: false}
     ]
   end
 end

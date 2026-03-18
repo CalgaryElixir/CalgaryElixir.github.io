@@ -21,6 +21,7 @@ defmodule CalgaryElixirWebsite do
       generate_page("blog/#{post.id}/index.html", &CalgaryElixirWebsite.Pages.Blog.show/1, %{post: post})
     end
 
+    copy_static_assets()
     File.write!(Path.join(@output_dir, ".nojekyll"), "")
 
     IO.puts("Site generated in #{@output_dir}/")
@@ -36,5 +37,9 @@ defmodule CalgaryElixirWebsite do
     full_path = Path.join(@output_dir, path)
     full_path |> Path.dirname() |> File.mkdir_p!()
     File.write!(full_path, html)
+  end
+
+  defp copy_static_assets do
+    File.cp_r!("priv/static/assets", Path.join(@output_dir, "assets"))
   end
 end
