@@ -1,6 +1,7 @@
 /_build/
 /deps/
 /output/
+/priv/static/
 *.beam
 *.ez
 erl_crash.dump
