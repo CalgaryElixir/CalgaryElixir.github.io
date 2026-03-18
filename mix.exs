@@ -21,7 +21,10 @@ defmodule CalgaryElixirWebsite.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:phoenix_live_view, "~> 1.0"}
+      {:phoenix_live_view, "~> 1.0"},
+      {:nimble_publisher, "~> 1.1"},
+      {:makeup_elixir, "~> 1.0"},
+      {:makeup_erlang, "~> 1.0"}
     ]
   end
 end

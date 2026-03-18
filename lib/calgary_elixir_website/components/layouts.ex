@@ -11,7 +11,15 @@ defmodule CalgaryElixirWebsite.Components.Layouts do
         <title><%= @page_title %></title>
       </head>
       <body>
-        <%= render_slot(@inner_block) %>
+        <nav>
+          <a href="/">Home</a> |
+          <a href="/meetup/">Meetup</a> |
+          <a href="/resources/">Resources</a> |
+          <a href="/blog/">Blog</a>
+        </nav>
+        <main>
+          <%= render_slot(@inner_block) %>
+        </main>
       </body>
     </html>
     """
