@@ -12,6 +12,7 @@ defmodule CalgaryElixirWebsite do
     generate_page("index.html", &CalgaryElixirWebsite.Pages.Home.render/1, %{})
     generate_page("meetup/index.html", &CalgaryElixirWebsite.Pages.Meetup.render/1, %{})
     generate_page("resources/index.html", &CalgaryElixirWebsite.Pages.Resources.render/1, %{})
+    generate_page("companies/index.html", &CalgaryElixirWebsite.Pages.Companies.render/1, %{})
     generate_page("404.html", &CalgaryElixirWebsite.Pages.NotFound.render/1, %{})
 
     posts = CalgaryElixirWebsite.Blog.all_posts()
