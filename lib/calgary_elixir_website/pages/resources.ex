@@ -38,7 +38,7 @@ defmodule CalgaryElixirWebsite.Pages.Resources do
             <a href="https://www.meetup.com/elixir-calgary/" class="text-purple-800 underline hover:text-purple-400">Calgary Elixir Meetup</a>
             - A bi-monthly event hosted by Elixir developers.
           </li>
-          <li>Calgary companies using Elixir - Coming soon!</li>
+          <li><a href="/companies/" class="text-purple-800 underline hover:text-purple-400">Calgary companies using Elixir</a></li>
         </ul>
       </section>
 
